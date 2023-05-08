@@ -1,6 +1,4 @@
-console.log('funguju!');
-
-const time = [
+const times = [
     {
         hours: 12,
         minutes: 34,
@@ -23,11 +21,11 @@ const Clock = (props) => {
 
 }
 
-const renderTime = (items) => {
+const renderTimes = (items) => {
     const appElm = document.querySelector('#app');
     appElm.innerHTML = items
     .map(item => Clock(item))
     .join('');
 }
 
-renderTime(time);
+renderTimes(times);
